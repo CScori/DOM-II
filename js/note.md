@@ -1,4 +1,20 @@
 domElement.forEach(element => {
     element.style.color = blue
 })
-^ to iterate throu styles on arrays d1
+
+
+const nav = document.querySelectorAll('.nav-link');
+nav.forEach(data => {
+    data.style.color = red;
+});
+
+const name.classList.remove/add/('name')
+
+^ d1
+
+const $$$$ = document.querySelectorAll('.####');
+$$$$.forEach(item => {
+    item.addEventListener("evnt", e => {
+        item.style.#### = 'stylepref';
+    });
+});
