@@ -18,3 +18,5 @@ $$$$.forEach(item => {
         item.style.#### = 'stylepref';
     });
 });
+
+propogation

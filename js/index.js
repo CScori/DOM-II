@@ -14,6 +14,7 @@ navs[0].addEventListener('mouseleave', function (e) {
 navs[1].addEventListener('mouseover', function (e) {
     navs[1].style.color = 'red';
     console.log('im over the mouse line');
+    e.stopPropagation();
 });
 
 navs[2].addEventListener('mouseenter', function (e) {
@@ -31,23 +32,22 @@ title.addEventListener('select', function (e) {
     console.log('this is first');
 });
 
-
 sectionImg.addEventListener('drop', function (event) {
     sectionImg.style.transform = 'scale(1.1)';
     sectionImg.style.transition = 'transform 0.5s';
 })
 
-locPick[0].addEventListener('keydown', function () {
+locPick[0].addEventListener('keydown', function (e) {
     locPick[0].style.display = 'none';
     console.log('I disapeared');
 })
 
-locPick[1].addEventListener('dblclick', function () {
+locPick[1].addEventListener('dblclick', function (e) {
     locPick[1].style.color = 'red';
     console.log('i see red');
 })
 
-locPick[2].addEventListener('mouseup', function () {
+locPick[2].addEventListener('mouseup', function (e) {
     locPick[2].style.background = 'purple';
     console.log('purple rain');
 })
