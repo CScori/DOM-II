@@ -49,7 +49,9 @@ locPick[1].addEventListener('dblclick', function (e) {
 
 locPick[2].addEventListener('mouseup', function (e) {
     locPick[2].style.background = 'purple';
+    e.preventDefault();
     console.log('purple rain');
+
 })
 
 window.addEventListener("scroll", event => {
